@@ -27,6 +27,7 @@ public class EnemyIA : MonoBehaviour
          {
              agent.isStopped = false;
              agent.SetDestination(Target.position);
+             agent.speed = (transform.position - Target.position).magnitude;
          }
     }
 }

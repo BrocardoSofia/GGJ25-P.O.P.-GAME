@@ -49,6 +49,8 @@ public class EnemyIA : MonoBehaviour
              // Le decimos a que velocidad tiene que ir
              // Lo pongo asi para que no sea tan brusco el movimiento y sea mas suave
              agent.speed = (transform.position - Target.position).magnitude;
+             
+             if (distance < 3) agent.isStopped = true;
          }
          else
          {

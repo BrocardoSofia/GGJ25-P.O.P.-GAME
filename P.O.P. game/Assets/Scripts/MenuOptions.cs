@@ -12,4 +12,11 @@ public class MenuOptions : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void GoToCredits()
+    {
+        string scene = "Credits";
+
+        SceneManager.LoadScene(scene);
+    }
 }

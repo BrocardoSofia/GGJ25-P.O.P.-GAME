@@ -1,11 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ConfLogic : MonoBehaviour
+public class CreditScript : MonoBehaviour
 {
-    public void GoToMenu()
+    public void OnCreditAnimationEnd()
     {
         SceneManager.LoadScene(0);
     }
-
 }

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fbff383-68b3-43a4-a281-ec78f264186f" name="Changes" comment="" />
+    <list default="true" id="4fbff383-68b3-43a4-a281-ec78f264186f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.P.O.P. game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.P.O.P. game/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +17,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyIA.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/ShootController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -91,6 +94,7 @@
       <updated>1737811517479</updated>
       <workItem from="1737811537259" duration="3000" />
       <workItem from="1737814028779" duration="16371000" />
+      <workItem from="1737840819912" duration="3212000" />
     </task>
     <servers />
   </component>

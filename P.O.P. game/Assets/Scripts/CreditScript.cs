@@ -8,6 +8,7 @@ public class CreditScript : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = true;
         animator = GetComponent<Animator>();
         animator.Play("CreditsAnimation", 0, 0f);
     }

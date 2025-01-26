@@ -3,6 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuOptions : MonoBehaviour
 {
+    public void Start()
+    {
+        Cursor.visible = true;
+    }
     public void Exit()
     {
         Application.Quit();

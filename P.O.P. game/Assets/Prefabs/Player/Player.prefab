@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 8315964471830880520}
   - component: {fileID: 8616731085101081774}
   - component: {fileID: 1059343871301737628}
+  - component: {fileID: 6165758787226150874}
+  - component: {fileID: 5787006348382205836}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -187,6 +189,41 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &6165758787226150874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6234304722521681966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365ea72e70c90044887e3ef67ce486a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  chipSpeed: 2
+  frontHealthBar: {fileID: 0}
+  backHealthBar: {fileID: 0}
+--- !u!114 &5787006348382205836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6234304722521681966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b33f692dfacdb94ca03072117dbbfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 0
+  totalEnemiesInLevel: 6
+  currentXp: 0
+  requiredXP: 0
+  xpGained: 10
+  frontXpBar: {fileID: 0}
+  backXpBar: {fileID: 0}
 --- !u!1 &6292376409097554225
 GameObject:
   m_ObjectHideFlags: 0

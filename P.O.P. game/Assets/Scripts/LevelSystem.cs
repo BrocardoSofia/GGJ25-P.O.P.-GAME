@@ -16,7 +16,6 @@ public class LevelSystem : MonoBehaviour
     [Header("UI")]
     public Image frontXpBar;
     public Image backXpBar;
-    public TextMeshProUGUI xpText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -60,7 +59,7 @@ public class LevelSystem : MonoBehaviour
                 frontXpBar.fillAmount = Mathf.Lerp(FXP, backXpBar.fillAmount, percentComplete);
             }
         }
-        xpText.text = currentXp + "/" + requiredXP;
+     
     }
 
     public void GainExperienceFlatRate()

@@ -11,7 +11,6 @@ public class PlayerHealth : MonoBehaviour
     public float chipSpeed = 2f;
     public Image frontHealthBar;
     public Image backHealthBar;
-    public TextMeshProUGUI healthText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -52,7 +51,7 @@ public class PlayerHealth : MonoBehaviour
             percentComplete = percentComplete * percentComplete;
             frontHealthBar.fillAmount = Mathf.Lerp(fillFront, backHealthBar.fillAmount, percentComplete);
         }
-        healthText.text = Mathf.Round(health) + "/" + Mathf.Round(maxHealth);
+      
     }
     
 

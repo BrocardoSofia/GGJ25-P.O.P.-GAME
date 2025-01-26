@@ -2,15 +2,25 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-    public string promptMenssage; // message displayed to player when looking at an interactable 
-    
-    public void BaseInteract()
+    public bool useEvents;
+    [SerializeField]
+    public string prompMessage;
+
+    public virtual string OnLook()
     {
-        Interact();
+        return prompMessage;
     }
 
+    public void BaseInteract()
+    {
+        if(useEvents)
+        {
+            GetComponent<InteractionEvent>().OnInteract.Invoke();
+        }
+        Interact();
+    }
     protected virtual void Interact()
     {
-        // template function to be overridden by our subclases
+
     }
 }

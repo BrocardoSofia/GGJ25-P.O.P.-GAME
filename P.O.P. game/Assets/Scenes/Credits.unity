@@ -473,6 +473,7 @@ GameObject:
   - component: {fileID: 894060537}
   - component: {fileID: 894060538}
   - component: {fileID: 894060539}
+  - component: {fileID: 894060540}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -537,6 +538,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6751e3039cf7a484dbb234445809093c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &894060540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894060536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0b24fa5b610bf43a2e821456d6ba40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1074394229
@@ -1506,7 +1519,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1086781657}
           m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
           m_MethodName: HoverSound
           m_Mode: 1
@@ -1562,7 +1575,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1086781657}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: ClickSound
         m_Mode: 1
@@ -1574,7 +1587,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 894060540}
         m_TargetAssemblyTypeName: ConfLogic, Assembly-CSharp
         m_MethodName: GoToMenu
         m_Mode: 1

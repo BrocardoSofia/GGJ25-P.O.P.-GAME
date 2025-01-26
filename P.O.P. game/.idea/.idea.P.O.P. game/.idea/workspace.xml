@@ -6,33 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4fbff383-68b3-43a4-a281-ec78f264186f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.P.O.P. game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.P.O.P. game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Enemys/MONSTRUO 1_con_animaciones.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Enemys/MONSTRUO 1_con_animaciones.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Enemys/Materials/MONSTRUO 1_con_animaciones-Material.001.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Enemys/Materials/MONSTRUO 1_con_animaciones-Material.001.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Enemys/Materials/MONSTRUO 1_con_animaciones-Material.002.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Enemys/Materials/MONSTRUO 1_con_animaciones-Material.002.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Enemys/Materials/MONSTRUO 1_con_animaciones-Material.003.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Enemys/Materials/MONSTRUO 1_con_animaciones-Material.003.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Enemys/Materials/MONSTRUO 1_con_animaciones-Material.004.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Enemys/Materials/MONSTRUO 1_con_animaciones-Material.004.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Enemys/Materials/MONSTRUO 1_con_animaciones-Material.005.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Enemys/Materials/MONSTRUO 1_con_animaciones-Material.005.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Enemys/Materials/MONSTRUO 1_con_animaciones-Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Enemys/Materials/MONSTRUO 1_con_animaciones-Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Enemys/New Animator Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Enemys/New Animator Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Materials/marco INTERIOR-Damaged Metal.001.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Materials/marco INTERIOR-Damaged Metal.001.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Materials/marco exterior-Diamond Pattern Rubber Gray.001.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Materials/marco exterior-Diamond Pattern Rubber Gray.001.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/marco INTERIOR.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/marco INTERIOR.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/marco exterior.fbm/Diamond_Pattern_Rubber_basecolor.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/marco exterior.fbm/Diamond_Pattern_Rubber_basecolor.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/marco exterior.fbm/Diamond_Pattern_Rubber_normal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/marco exterior.fbm/Diamond_Pattern_Rubber_normal.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/marco exterior.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/marco exterior.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Shoot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Objects/Shoot.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Player Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Player Test Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Prueba/Prueba.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Prueba/Prueba.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Prueba/Prueba/NavMesh-NavMesh Surface.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scenes/Prueba/Prueba/NavMesh-NavMesh Surface.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyIA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyIA.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelLogic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/ShootController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/ShootController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

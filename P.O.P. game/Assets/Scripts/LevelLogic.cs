@@ -8,14 +8,14 @@ public class LevelLogic : MonoBehaviour
         Cursor.visible = false;
     }
 
-    public void GameOver()
+    static public void GameOver()
     {
         string scene = "GameOver";
 
         SceneManager.LoadScene(scene);
     }
 
-    public void NextScene()
+     static public void NextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }

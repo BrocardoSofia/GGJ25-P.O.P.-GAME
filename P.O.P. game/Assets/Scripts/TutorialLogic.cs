@@ -19,16 +19,16 @@ public class TutorialLogic : MonoBehaviour
 
     public void ContinueTutorial()
     {
-        if(index != (tutorialImages.Length - 1))
+        if(index == (tutorialImages.Length - 1))
+        {
+            StartGame();
+        }
+        else
         {
             index++;
             if (index < tutorialImages.Length)
             {
                 panelImage.sprite = tutorialImages[index];
-            }
-            else
-            {
-                StartGame();
             }
         }
        

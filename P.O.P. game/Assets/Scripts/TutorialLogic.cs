@@ -13,6 +13,7 @@ public class TutorialLogic : MonoBehaviour
 
     private void Start()
     {
+        Cursor.visible = true;
         panelImage = panel.GetComponent<Image>();
         panelImage.sprite = tutorialImages[index];
     }

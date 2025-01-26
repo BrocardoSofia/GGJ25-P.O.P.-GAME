@@ -16,7 +16,6 @@ public class LevelMenu : MonoBehaviour
     void Start()
     {
         LoadVolume();
-        Cursor.visible = false;
         menu.gameObject.SetActive(false);
     }
 

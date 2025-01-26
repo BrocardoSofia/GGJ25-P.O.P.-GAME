@@ -11,6 +11,9 @@ public class PlayerHealth : MonoBehaviour
     public float chipSpeed = 2f;
     public Image frontHealthBar;
     public Image backHealthBar;
+    public TextMeshProUGUI healthText;
+    [SerializeField] private GameObject manchaDeSangre;
+    private bool manchaDeSangreActive = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -51,17 +54,27 @@ public class PlayerHealth : MonoBehaviour
             percentComplete = percentComplete * percentComplete;
             frontHealthBar.fillAmount = Mathf.Lerp(fillFront, backHealthBar.fillAmount, percentComplete);
         }
-      
+        healthText.text = Mathf.Round(health) + "/" + Mathf.Round(maxHealth);
     }
     
 
     public void takeDamage(float damage)
     {
-        Debug.Log(health);
-
+        manchaDeSangre.SetActive(true);
+        manchaDeSangreActive = true;
         health -= damage;
         lerpTimer = 0f;
-        
+
+        if (manchaDeSangreActive)
+        {
+            manchaDeSangreActive = false;
+            Invoke("desactivarManchaDeSangre", 2f);
+        }
+    }
+
+    private void desactivarManchaDeSangre()
+    {
+        manchaDeSangre.SetActive(false);
     }
 
     public void restoreHealth(float healAmount)

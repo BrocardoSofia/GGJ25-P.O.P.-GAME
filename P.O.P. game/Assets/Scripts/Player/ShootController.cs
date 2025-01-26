@@ -23,7 +23,6 @@ public class ShootController : MonoBehaviour
             newBullet = Instantiate(bulletPrefab, bulletSpawn.position, transform.rotation);
             newBullet.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward * fireForce);
             Destroy(newBullet, 2f);
-            bulletCount--;
         }
     }
 }

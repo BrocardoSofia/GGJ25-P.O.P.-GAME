@@ -4,9 +4,13 @@ using UnityEngine.AI;
 
 public class EnemyIA : MonoBehaviour
 {
+    [SerializeField]
+    private float damage;
+    
     public Transform Target;
     public float FollowPlayerDistance;
     public Transform[] Waypoints;
+    public PlayerHealth ph;
 
     private NavMeshAgent agent;
     private Animator animator;
@@ -14,6 +18,8 @@ public class EnemyIA : MonoBehaviour
     private float waypointDistance;
     private int currentWaypoint = 0;
     private bool isAttacking = false;
+    
+    private bool atacar = false;
 
     private enum EnemyState { Patrolling, Chasing, Attacking, Resting }
     private EnemyState currentState = EnemyState.Patrolling;
@@ -28,6 +34,7 @@ public class EnemyIA : MonoBehaviour
     void Update()
     {
         distance = Vector3.Distance(agent.transform.position, Target.position);
+        
 
         switch (currentState)
         {
@@ -41,7 +48,7 @@ public class EnemyIA : MonoBehaviour
 
             case EnemyState.Chasing:
                 ChasePlayer();
-                if (distance < 2.8f)
+                if (distance < 4f)
                 {
                     currentState = EnemyState.Attacking;
                     StartCoroutine(Attack());
@@ -59,6 +66,14 @@ public class EnemyIA : MonoBehaviour
             case EnemyState.Resting:
                 // No hacer nada mientras descansa
                 break;
+        }
+    }
+
+    public void daniar()
+    {
+        if (distance < 5f)
+        {
+            ph.takeDamage(damage);
         }
     }
 

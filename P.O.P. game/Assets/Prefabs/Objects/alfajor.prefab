@@ -9,14 +9,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cacbd764fc3e738488dd69ab891d556c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 632.894
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: cacbd764fc3e738488dd69ab891d556c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 355.23764
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: cacbd764fc3e738488dd69ab891d556c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.7040007
       objectReference: {fileID: 0}

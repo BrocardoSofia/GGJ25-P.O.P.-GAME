@@ -17,6 +17,8 @@ public class LevelSystem : MonoBehaviour
     public Image frontXpBar;
     public Image backXpBar;
 
+    private int enemigosMuertos = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,6 +40,11 @@ public class LevelSystem : MonoBehaviour
         if(currentXp > requiredXP)
         {
             LevelUp();
+        }
+
+        if (enemigosMuertos == totalEnemiesInLevel)
+        {
+            LevelLogic.NextScene();
         }
 
     }
@@ -66,6 +73,7 @@ public class LevelSystem : MonoBehaviour
     {
         currentXp += xpGained;
         lerpTimer = 0f;
+        enemigosMuertos++;
     }
 
     public void GainExperienceScalable(float xpGained, int passedLevel)
@@ -87,8 +95,7 @@ public class LevelSystem : MonoBehaviour
     {
         frontXpBar.fillAmount = 0f;
         backXpBar.fillAmount = 0f;
-        currentXp = Mathf.RoundToInt(currentXp - requiredXP);
-        GetComponent<PlayerHealth>().IncreaseHealth(10);
+        LevelLogic.NextScene();
     }
 
 }

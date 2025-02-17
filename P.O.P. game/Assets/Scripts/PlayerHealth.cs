@@ -27,6 +27,11 @@ public class PlayerHealth : MonoBehaviour
         health = Mathf.Clamp(health, 0, maxHealth);
         updateHealthUI();
 
+        if (health <= 0)
+        {
+            LevelLogic.GameOver();
+        }
+
     }
 
     public void updateHealthUI()

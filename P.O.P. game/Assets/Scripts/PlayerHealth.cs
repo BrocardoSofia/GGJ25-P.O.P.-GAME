@@ -4,6 +4,11 @@ using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
+    [SerializeField]
+    public AudioSource SFXSource;
+
+    public AudioClip damageSound;
+
     private float health;
     private float lerpTimer;
 
@@ -67,6 +72,7 @@ public class PlayerHealth : MonoBehaviour
     {
         manchaDeSangre.SetActive(true);
         manchaDeSangreActive = true;
+        SFXSource.PlayOneShot(damageSound);
         health -= damage;
         lerpTimer = 0f;
 

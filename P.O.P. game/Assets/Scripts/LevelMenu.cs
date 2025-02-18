@@ -13,10 +13,15 @@ public class LevelMenu : MonoBehaviour
     public Slider musicSlider;
     public Slider sfxSlider;
 
+    public bool inGame = false;
+
     void Start()
     {
         LoadVolume();
         menu.gameObject.SetActive(false);
+
+        Cursor.visible = !inGame;
+        Debug.Log("Cursor is set to " + !inGame);
     }
 
     void Update()
@@ -40,7 +45,8 @@ public class LevelMenu : MonoBehaviour
         Time.timeScale = 0f;
         menu.gameObject.SetActive(true);
         isPaused = true;
-        Cursor.visible = true;
+        if(inGame)
+            Cursor.visible = true;
     }
 
     public void ResumeGame()
@@ -49,7 +55,8 @@ public class LevelMenu : MonoBehaviour
         Time.timeScale = 1f;
         menu.gameObject.SetActive(false);
         isPaused = false;
-        Cursor.visible = false;
+        if (inGame)
+            Cursor.visible = false;
         SaveVolume();
     }
 
@@ -76,6 +83,7 @@ public class LevelMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SaveVolume();
+        Cursor.visible = true;
         SceneManager.LoadScene(0);
     }
 

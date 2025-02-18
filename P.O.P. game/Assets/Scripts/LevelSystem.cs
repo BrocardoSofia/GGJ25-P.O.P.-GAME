@@ -27,15 +27,20 @@ public class LevelSystem : MonoBehaviour
         backXpBar.fillAmount = currentXp / requiredXP;
         
     }
+    void OnEnable()
+    {
+        DeathEnemy.OnEnemigoMuerto += GainExperienceFlatRate;
+    }
+
+    void OnDisable()
+    {
+        DeathEnemy.OnEnemigoMuerto -= GainExperienceFlatRate;
+    }
 
     // Update is called once per frame
     void Update()
     {
         UpdateXpUI();
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            GainExperienceFlatRate(); //ver
-        }
 
         if(currentXp > requiredXP)
         {
@@ -69,7 +74,7 @@ public class LevelSystem : MonoBehaviour
      
     }
 
-    public void GainExperienceFlatRate()
+    void GainExperienceFlatRate()
     {
         currentXp += xpGained;
         lerpTimer = 0f;

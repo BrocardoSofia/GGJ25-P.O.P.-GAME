@@ -81,6 +81,12 @@ public class EnemyIA : MonoBehaviour
     {
         if (currentWaypoint >= Waypoints.Length) currentWaypoint = 0;
 
+        if (Waypoints[currentWaypoint] == null)
+        {
+            Debug.LogWarning("El waypoint ha sido destruido.");
+            return;
+        }
+
         agent.isStopped = false;
         agent.SetDestination(Waypoints[currentWaypoint].position);
         waypointDistance = Vector3.Distance(transform.position, Waypoints[currentWaypoint].position);
@@ -93,15 +99,31 @@ public class EnemyIA : MonoBehaviour
 
     void ChasePlayer()
     {
-        agent.isStopped = false;
-        agent.SetDestination(Target.position);
-        animator.SetBool("move", true);
+        if (agent.isOnNavMesh && Target != null)
+        {
+            agent.isStopped = false;
+            agent.SetDestination(Target.position);
+            animator.SetBool("move", true);
+        }
+        else
+        {
+            Debug.LogWarning("El NavMeshAgent no está en un NavMesh o el Target es nulo.");
+        }
     }
 
     IEnumerator Attack()
     {
         currentState = EnemyState.Attacking;
-        agent.isStopped = true;
+
+        if (agent.isOnNavMesh)
+        {
+            agent.isStopped = true;
+        }
+        else
+        {
+            Debug.LogWarning("El NavMeshAgent no está en un NavMesh.");
+        }
+
         animator.SetBool("move", false);
         animator.SetBool("Attack", true);
 
@@ -109,6 +131,15 @@ public class EnemyIA : MonoBehaviour
 
         animator.SetBool("Attack", false);
         currentState = EnemyState.Chasing;
+
+        if (agent.isOnNavMesh)
+        {
+            agent.isStopped = false;
+        }
+        else
+        {
+            Debug.LogWarning("El NavMeshAgent no está en un NavMesh.");
+        }
     }
 
     IEnumerator Rest()
@@ -122,6 +153,13 @@ public class EnemyIA : MonoBehaviour
         currentWaypoint++;
         currentState = EnemyState.Patrolling;
         animator.SetBool("move", true);
-        agent.isStopped = false;
+        if (agent.isOnNavMesh)
+        {
+            agent.isStopped = false;
+        }
+        else
+        {
+            Debug.LogWarning("El NavMeshAgent no está en un NavMesh.");
+        }
     }
 }
